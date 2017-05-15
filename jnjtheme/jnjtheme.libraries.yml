@@ -1,0 +1,36 @@
+global:
+  version: VERSION
+  css:
+    base:
+      css/jnjtheme-main.css: {}
+      /libraries/tablesaw/dist/tablesaw.css: {}
+      css/jnjtheme-colors.css: {}
+      css/jnjtheme.overrides.css: {}
+  js:
+    js/jnjtheme.js: {}
+    /libraries/tablesaw/dist/tablesaw.js: {}
+    /libraries/tablesaw/dist/tablesaw.jquery.js: {}
+    /libraries/tablesaw/dist/tablesaw-init.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.one
+    - zurb_foundation/global
+
+masonry:
+  version: VERSION
+  js:
+    js/jnjtheme-masonry.js: {}
+  dependencies:
+    - df_tools_gallery/imagesloaded
+    - df_tools_gallery/masonry
+
+color.preview:
+  version: VERSION
+  css:
+    theme:
+      color/preview.css: {}
+  js:
+    color/preview.js: {}
+  dependencies:
+    - color/drupal.color
